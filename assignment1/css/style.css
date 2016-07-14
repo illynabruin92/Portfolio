@@ -171,7 +171,7 @@ h3, .sidebar h2 {
 }
 
 .work h3 {
-  border-bottom: 0; 
+  border-bottom: 0;
   background: #4aaaa5;
   color: #fff;
   text-align: center;
@@ -197,14 +197,14 @@ h3, .sidebar h2 {
 #contact-form ul {
   margin-bottom: 20px;
   list-style: none;
-  margin-left: -40px;
+  margin-left: 0px;
 }
 
 #contact-form li {
   margin-bottom: 10px;
 }
 
-label, 
+label,
 input[type=text],
 input[type=email],
 textarea {
@@ -219,7 +219,7 @@ textarea {
   border: 1px solid #ddd;
   padding: 0 10px;
   font-size: 14px;
-} 
+}
 
 textarea {
   height: 200px;
@@ -244,65 +244,42 @@ footer, .push {
   height: 155px; /* '.push' must be the same height as 'footer' */
 }
 
+/*Media Queries*/
 
+/*Desktop*/
 
-
-
-/*Mobile Phone*/
-
-@media (max-width: 640px){
-
-  #masthead {
-    position: static;
-    margin: 0 0 30px;
-    color: #fff;
-    overflow: auto;
-    border-bottom: 2px solid #ccc;
-  }
+@media screen (max-width: 980px) {
 
   #logo {
-    text-align: center;
-    width:100%;
+    margin-left: 90px;
   }
 
   nav {
-    max-width: 100%;
-    text-align: center;
-    margin: 0;
-    float: right;
+    margin-right: 130px;
   }
-
-  nav a {
-    margin: 20px;
-    margin-right: 55px;
-    padding-left: 55px;
-  }
-
 
   .main-section{
-    margin-top:-140px
+    max-width: 45%;
+    margin-top: -120px;
+    margin-left: 90px;
   }
 
   img.auth-image {
-    width: inherit;
+    width: 100%;
     margin-bottom: 10px;
   }
 
-  h1 {
-    margin-left: 0px;
-  }
-
   .sidebar {
-    float: left;
-    max-width: 100%;
+    margin-top: -120px;
+    margin-right: 120px;
   }
 
   .work {
     width:100%;
   }
 
-   #contact-form ul {
-    margin-left: -40px;
+  #contact-form ul {
+    margin-left: 0;
   }
 
   input[type=submit] {
@@ -310,55 +287,41 @@ footer, .push {
   }
 }
 
-
-
-
 /*Tablet*/
 
-@media (max-width: 768px){
+@media screen (max-width: 768px) {
 
-  #masthead {
-    position: static;
-    margin: 0 0 30px;
-    color: #fff;
-    overflow: auto;
-    border-bottom: 2px solid #ccc;
+
+  #logo {
+    margin-left: 15px;
   }
 
   nav {
-    margin-top: 25px;
-    margin-right: 90px;    
-  }
-
-  nav a {
-    padding: -10 50px;
+    margin-right: 25px;
   }
 
   .main-section{
-    max-width: 100%;
-    margin-top:-140px
+    max-width: 95%;
+    margin-left: 15px;
+    margin-top: -140px;
   }
 
   img.auth-image {
     width: 50%;
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    margin-left: 0px;
   }
 
   .sidebar {
     float: left;
-    max-width: 100%;
+    max-width: 95%;
+    margin-left: 15px;
   }
 
   .work {
-    width: 308px;
+    width: 298px;
   }
 
   #contact-form ul {
-    margin-left: -40px;
+    margin-left: 0px;
   }
 
   input[type=submit] {
@@ -367,30 +330,40 @@ footer, .push {
 }
 
 
-/*Desktop*/
+/*Mobile Phone*/
 
-@media (max-width: 980px){
+@media screen (max-width: 640px) {
 
   #masthead {
     position: static;
+    width: 100%;
   }
 
   #logo {
-    margin-left:80px;
+    text-align: center;
+    width:100%;
   }
 
   nav {
-    margin-right: 80px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
   }
 
   nav a {
-    padding: -10 50px;
+    padding-right: 30px;
+    padding-left: 80px;
   }
 
+  nav a:first-child {
+    padding-left: 50px;
+  }
+
+
   .main-section{
-    max-width: 50%;
-    margin-top:-140px;
-    margin-left: 80px;
+    width: 95%;
+    margin-top: -140px;
+    margin-left: 15px;
   }
 
   img.auth-image {
@@ -399,27 +372,24 @@ footer, .push {
   }
 
   h1 {
-    margin-left: 0;
+    margin-left: 0px;
   }
 
   .sidebar {
-    margin-top: -140px;
-    margin-right: 80px;
+    float: left;
+    max-width: 95%;
+    margin-left: 15px;
   }
 
   .work {
     width:100%;
   }
 
-  #contact-form ul {
-    margin-left: -40px;
+   #contact-form ul {
+    margin-left: 0px;
   }
 
   input[type=submit] {
     margin-left: 0;
   }
-} 
-
-
-
-
+}
