@@ -272,6 +272,7 @@ footer, .push {
   .sidebar {
     margin-top: -120px;
     margin-right: 120px;
+    clear: right;
   }
 
   .work {
@@ -311,7 +312,7 @@ footer, .push {
   }
 
   .sidebar {
-    float: left;
+    clear: right;
     max-width: 95%;
     margin-left: 15px;
   }
@@ -376,7 +377,7 @@ footer, .push {
   }
 
   .sidebar {
-    float: left;
+    clear: right;
     max-width: 95%;
     margin-left: 15px;
   }
